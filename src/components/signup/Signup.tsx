@@ -28,10 +28,10 @@ const Signup: React.FC = ():JSX.Element => {
                 email,
                 pass
             }
-            // const result =
-            //     await axios.post("http://localhost:8000/api/users/signup", body)
-            // console.log(`result status: ${result.status}, result data: ${result.data}`)
-            console.log('Dummy request sent')
+            const result =
+                await axios.post("http://localhost:8000/api/users/signup", body)
+            console.log(`result status: ${result.status}, result data: ${result.data}`)
+            // console.log('Dummy request sent')
         } catch (error: any) {
             console.error(`Error in ${handleSubmit.name}: ${error}`)
         }
